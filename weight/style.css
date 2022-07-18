@@ -1,0 +1,13 @@
+.span{color: #ee82ee}
+li{background-color: rgb(148, 148, 148)}
+*{color:rgb(5, 14, 31) ;}
+p {background-color: rgb(193, 193, 218);}
+.class{background-color: aquamarine;}
+.class1{background-color: crimson;}
+.class.class{background-color: darkolivegreen;}
+[title~=target]{background-color: #c3ff9a;}
+#id{background-color: rgb(150, 90, 207);}
+#id2{background-color: rgb(86, 124, 150);}
+#id,#id2,p{background-color: rgb(157, 245, 149);}
+p:last-of-type{background-color: rgb(167, 145, 25);}
+.important{background-color: rgb(71, 163, 255) !important;}
