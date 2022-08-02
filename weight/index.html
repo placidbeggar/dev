@@ -10,69 +10,37 @@
 </head>
 
 <body>
-    <h1>CSS Selectors</h1>
-    <ol>
-        <li><span class="span">*</span>:Selects absolutely all elements on the page. Weight:0</li>
-        <li><span class="span">.class</span>:Selects an element with a class attribute. Weight:10</li>
-        <li><span class="span">#id</span>:Selects an element with an id attribute. Weight:100</li>
-        <li><span class="span">[attr=val]</span>:Selects elements that have an attribute with the specified
-            value.Selector of attributes with the exact value. Weight:10</li>
-        <li><span class="span">A</span>:Any HTML element for which formatting rules are defined can be a selector.
-            Weight:1</li>
-        <li><span class="span">.class.class</span>:Multiple classes can be added to any element at the same time.
-            Weight:20</li>
-        <li><span class="span">inline-style</span>:Gets a specificity value of 1000. Weight:1000</li>
-        <li><span class="span">!important</span>:Rule in CSS is used to add more importance to a property/value than
-            normal.Weight:10000</li>
-        <li><span class="span">#id #id2 a</span>: Two id selectors and one type selector. Weight: 201</li>
-        <li><span class="span">:last-of-type</span>:Pseudo-class.Selects the last element with the same tag. Weight:10
-        </li>
-    </ol>
-
+    <h1>Селекторы</h1>
     <div>
-        <p class="class">[применил двойной класс, вес:20] Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Molestias, dolore! Ratione iure numquam earum maxime
-            illum commodi aut deleniti quaerat. Minima impedit iure id alias, in totam dolorem obcaecati labore!</p>
-        <p title="target" id="id"> [селектор значения атрибута, вес:10, селектор id, вес:100, затем применил селектор по
-            двум id и елементу, вес:201]Iste, dicta odit. Cum itaque
-            iure odit exercitationem vero quidemvoluptate inventore impedit, labore aspernatur
-            hic incidunt pariatur obcaecati deleniti? Ratione exercitationem aut ullam aspernatur totam, vero
-            dignissimos
-            mollitia provident!</p>
-        <p id="id2">[селектор id, вес:100. затем применил селектор по двум id и елементу, вес:201] Porro cum laborum nam
-            soluta dicta repudiandae culpa nostrum iusto accusantium aspernatur, autem ducimus
-            adipisci
-            obcaecati quisquam perspiciatis distinctio odit quos repellat quis non velit facilis. Modi error autem
-            mollitia!
+        <p>Применил [div p:first-child] вес 12, обратился ко всем первым потомкам тега p в div.</p>
+        <p class="second line__p">Применил [div p.second.line__p] вес 22, обратился к елементу p находящемся в div с
+            классами .second.line__p</p>
+        <p>Применил селектор по тегу p. Вес 1</p>
+        <div>
+            <p>Применил [div p:first-child] вес 12, обратился ко всем первым потомкам тега p в div</p>
+        </div>
+        <p id="p" class="id_p">Применил [ div p.id_p, затем перекрыл id, затем перекрыл !important] вес 12, затем 100,
+            затем более 10000</p>
+        <p class="wrapp">Применил [class=wrapp] вес 10, обратлся к элементу p по атрибуту имеющи в названии класс wrapp
         </p>
-        <p>Consectetur, doloribus nobis velit, fugit quis eligendi illum voluptatem cupiditate ipsum placeat, dicta
-            temporibus debitis blanditiis a aut accusamus! Voluptatem, quam ut optio debitis nesciunt sed temporibus
-            asperiores non et.</p>
-        <p class="important" style="background-color:gray;">[применил инлайн стиль, вес:1000. зетем !important,
-            вес:больше
-            10000]Laboriosam expedita enim quodquam debitis? Molestiae et eaque sit, eos rerum dolore iure quisquam,
-            corrupti
-            debitis sapiente, veniam quos eveniet! Delectus totam natus deserunt id sequi. Sed, excepturi in.</p>
-        <p>Incidunt illo eligendi at, nulla mollitia maiores autem qui optio vero nostrum inventore ea sunt dignissimos
-            placeat tenetur blanditiis debitis asperiores. Odit alias adipisci corporis nemo rem voluptates fugiat
-            suscipit.
-        </p>
-        <p>Nostrum magni fuga excepturi quas, necessitatibus quasi atque! Fugiat dolor harum, hic quibusdam maxime
-            voluptatum. Non velit doloribus sapiente dolorem! Vero fuga dolor deleniti laudantium earum repudiandae?
-            Cupiditate, corrupti exercitationem.</p>
-        <p>Facere amet tempora consequatur sapiente quas labore doloribus natus velit sint earum repellendus molestias
-            voluptate voluptatem sit rem dolorum officiis beatae, odio delectus consectetur aspernatur maxime deleniti
-            nam.
-            Veniam, aliquid!</p>
-        <p class="class1">[применил класс, вес: 10]Illum quo velit labore
-            architecto molestiae error voluptate sapiente animi omnis quos accusamus dolor nisi magnam odit impedit
-            laboriosam, aliquid maiores, sit assumenda aspernatur explicabo voluptas enim.
-            Soluta, hic quasi!
-        </p>
-        <p> [елемент и псевдо класс last-of type, вес:11] Natus, sunt sequi cupiditate quod, asperiores aliquam odit
-            accusantium nihil explicab incidunt harum. Nemo, harum ab sed voluptate sunt tenetur architecto incidunt
-            animi
-            ut fuga eius corporis laborum voluptatem enim!</p>
+        <div>
+            <ol>
+                <li id="id">Применил ID, вес 100</li>
+                <li>элемент маркированного списка 2
+                    <ul>
+                        <li>элемент не маркированного списка 1</li>
+                        <li class="class">Применил [div ol>li .class] вес 13, j, обратился к тегу li с классом .class,
+                            дочернему в теге ol </li>
+                    </ul>
+                </li>
+                <li>Применил [ol li:nth-child(3)] вес 12, обратился к 3-му елементу тега li внутри ol</li>
+                <li>
+                    <p class="last pre-last-p">Применил [div p:first-child] вес 12, обратился ко всем первым потомкам
+                        тега p в div</p>
+                    <p class="last last-p" id="last_p">Применил [.last.last-p#last_p], вес 120. </p>
+                </li>
+            </ol>
+        </div>
     </div>
 </body>
 

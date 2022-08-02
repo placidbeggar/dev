@@ -1,13 +1,64 @@
-.span{color: #ee82ee}
-li{background-color: rgb(148, 148, 148)}
-*{color:rgb(5, 14, 31) ;}
-p {background-color: rgb(193, 193, 218);}
-.class{background-color: aquamarine;}
-.class1{background-color: crimson;}
-.class.class{background-color: darkolivegreen;}
-[title~=target]{background-color: #c3ff9a;}
-#id{background-color: rgb(150, 90, 207);}
-#id2{background-color: rgb(86, 124, 150);}
-#id,#id2,p{background-color: rgb(157, 245, 149);}
-p:last-of-type{background-color: rgb(167, 145, 25);}
-.important{background-color: rgb(71, 163, 255) !important;}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    background-color: rgb(226, 233, 235);
+}
+
+h1 {
+    background-color: rgb(34, 34, 34);
+    color: rgba(251, 255, 234, 0.993);
+    margin: 0px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+p {
+    background-color: rgb(250, 250, 250);
+}
+
+.class {
+    background-color: rgb(153, 49, 49);
+}
+
+#id {
+    background-color: rgb(93, 195, 241);
+}
+
+div ol>li .class {
+    background-color: rgb(137, 240, 133);
+}
+
+ol li:nth-child(3) {
+    background-color: rgb(255, 9, 9);
+}
+
+.second {
+    background-color: rgb(201, 167, 245);
+}
+
+div p.second.line__p {
+    background-color: rgb(250, 150, 200);
+}
+
+[class=wrapp] {
+    background-color: rgb(163, 110, 212);
+}
+
+.last.last-p#last_p {
+    background-color: rgb(195, 236, 100);
+}
+
+div p:first-child {
+    background-color: rgb(237, 243, 149);
+}
+
+
+div p.id_p {
+    background-color: rgb(127, 252, 10) !important;
+}
+
+#p {
+    background-color: rgb(176, 212, 223);
+}
