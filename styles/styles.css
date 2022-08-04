@@ -100,9 +100,6 @@ body {
     font-size: 1.2em;
     border-radius: 12rem;
 
-
-
-
 }
 
 .button-keeper {
@@ -114,12 +111,6 @@ body {
     vertical-align: bottom;
     margin-bottom: 0;
 }
-
-.wrapp {
-    display: block;
-    align-items: center;
-}
-
 
 .card:hover {
     transform: scale(1.2);
