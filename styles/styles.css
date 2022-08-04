@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 16px;
+    margin: 0px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLIsr3ox6ZsksjERz-6K1ow9HbLkICxAFJVw&usqp=CAU)
+}
+
+.title {
+    background-color: #292727;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.container {
+    padding: 1em;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 200vw;
+    max-height: 250vh;
+}
+
+.card {
+    width: 30%;
+    height: 100%;
+    min-width: 200px;
+    min-height: 450px;
+    max-height: 450px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 8px rgb(2, 2, 2);
+    border-radius: 12px;
+    margin: 0em 0em 1em 1em;
+    justify-content: center;
+    overflow: hidden;
+    padding: .5rem;
+    font-size: 1em;
+    text-align: center;
+}
+
+.card__img {
+    height: 50%;
+    max-height: 210px;
+    display: inline-block;
+    width: auto;
+    padding: 1rem;
+
+}
+
+.card__title {
+    padding: 0em;
+    margin: -0.5em -0.5em 0;
+    display: inline-block;
+    font-size: 1em;
+    background-color: #000000;
+    border-radius: 0.3em;
+    color: #f0f0f0;
+    width: 100%;
+
+
+
+}
+
+.card__content {
+    height: 140px;
+    width: 100%;
+    padding-bottom: .5rem;
+    margin-top: .5rem;
+    display: inline-block;
+    max-height: 140px;
+
+}
+
+.card__description {
+    font-size: 0.8em;
+    border: 0.4em;
+    padding: 0.5em;
+    margin-top: 1em;
+    text-align: justify;
+    display: inline-block;
+    max-height: 80px;
+    overflow: hidden;
+
+}
+
+.button {
+    text-decoration: none;
+    font-weight: bolder;
+    background: linear-gradient(280deg, #616161, #030303);
+    color: #f0f0f0;
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    font-size: 1.2em;
+    border-radius: 12rem;
+
+
+
+
+}
+
+.button-keeper {
+    margin-top: 0.5rem;
+    padding: 0em;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    margin-bottom: 0;
+}
+
+.wrapp {
+    display: block;
+    align-items: center;
+}
+
+
+.card:hover {
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+    box-shadow: 16px 16px 16px 16px rgb(2, 2, 2);
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    background: linear-gradient(180deg, #000000, #8d8c8c);
+    box-shadow: 6px 6px 6px #292727;
+}
